@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
+
+/* Global Styles */
+body {
+    font-family: Montserrat, sans-serif; /* Change font family to Roboto */
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    background-color: #A9A9A9;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the game links and images */
+}
+
+ul li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Game Styles */
+.game-container {
+    background-color: #222;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+.input-field {
+    padding: 5px;
+    border: 1px solid #555;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #222;
+}
+
+.message {
+    font-style: italic;
+    color: #ccc;
+}
+
+.search-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center; /* Center the search button vertically */
+}
+
+#searchInput {
+    padding: 8px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+/* Game Styles */
+.image-container {
+    position: relative;
+    margin-bottom: 2.0px;
+    text-align: center;
+}
+
+.circular-image {
+    border-radius: 5px;
+    border: 4px solid white; 
+    width: 150px;
+    height: 150px;
+}
+
+.featured {
+    display: flex;
+    flex-direction: left;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1vw;
+    margin:1%;
+    margin-top: 6vw;
+}
+
+.featured h1 {
+    font-size: 3.5vw;
+    font-weight: 700;
+    margin: 100vw 100vw .400vw 100vw;
+    width: 83.8%;
+    text-align: left;
+    color: #fff;
+}
+
+.featured .column {
+    display: flex;
+    flex-direction: column;
+}
+
+.featured img {
+    height: 15vw;
+    width: 15vw;
+    border-radius: 1vw;
+    margin: .5vw;
+    cursor: pointer;
+    user-select: none;
+    transition: all .2s;
+}
+
+.featured img:hover {
+    transform: scale(1.02);
+    filter: brightness(50%);
+}
+
+
+.featured .row img {
+    height: 26vw;
+    width: 26vw;
+}
+
+.featured a {
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+    .featured .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s;
+    }
+
+    .featured a:hover .play-button {
+    opacity: 1;
+    pointer-events: none;
+    }
+
+    .featured .play-button i {
+    font-size: 5vw;
+    text-shadow: 0 0 100px #ffffff;
+    }
+/* ... other CSS ... */
+
+#app-menu {
+    /* Your existing styles */
+    display: none;
+    /* Other styles... */
+}
+
+#app-menu.show {
+    display: block; /* Show the menu when the show class is added */
+}
+
+/* Other CSS... */
+
+
+#menu-toggle {
+    /* ... your button styling ... */
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #ccc;
+    transition: transform 0.2s ease-in-out,  /* Add transition */
+                background-color 0.2s ease-in-out; 
+}
+
+#menu-toggle:hover {
+    background-color: #555;
+    cursor: pointer; /* Add cursor for better feedback */
+}
+
+#menu-toggle.open {
+    transform: scale(1.2);  /* Increase size when open */
+    background-color: #555; 
+}
+
+/* Define animation keyframes */
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Apply animation to the section buttons */
+        /* Adjust the dimensions and position of the section buttons */
+        .section-buttons {
+            position: fixed;
+            top: 60px; /* Adjust as needed to align with the menu button */
+            right: 10px; /* Adjust as needed to position the buttons on the right */
+            width: 40px; /* Set width to match the size of the menu button */
+            height: 40px; /* Set height to match the size of the menu button */
+            background-color: #333; /* Background color */
+            border: none;
+            border-radius: 5px; /* Rounded corners */
+            display: none;
+            flex-direction: column;
+            opacity: 0;
+            animation: slideInFromRight 0.3s ease forwards; /* Apply animation */
+        }
+ 0.3s ease forwards; /* Apply animation */
+}
+
+/* Your existing button styles... */
+
+/* Show the section buttons when the 'show' class is added */
+.section-buttons.show {
+    display: flex;
+    opacity: 1;
+}
+/* Define animation keyframes for closing */
+@keyframes slideOutToRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Apply animation to the section buttons when closing */
+.section-buttons.close {
+    animation: slideOutToRight 0.3s ease forwards; /* Apply animation */
+}
+
+/* Your existing button styles... */
+
+/* Show the section buttons when the 'show' class is added */
+.section-buttons.show {
+    display: flex;
+    opacity: 1;
+}
+
+
