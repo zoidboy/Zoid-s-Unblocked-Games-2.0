@@ -27,7 +27,7 @@ body::before {
     left: 0;
     width: 200%;
     height: 200%;
-    background: url(https://steamuserimages-a.akamaihd.net/ugc/271724616138984267/FD78FE7C4AC9EC2941BACBB457D311B908EA9CCD/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false) repeat; /* Replace with your image path */
+    background: url('path/to/your/space-background.jpg') repeat;
     z-index: -1;
     animation: moveBackground 100s linear infinite;
 }
@@ -35,8 +35,6 @@ body::before {
 /* Header Styles */
 h1 {
     margin-top: 20px;
-    text-transform: uppercase; /* Make the text uppercase */
-    font-size: 40px; /* Adjust font size as needed */
 }
 
 /* Menu Styles */
@@ -89,27 +87,4 @@ h1 {
 
 .menu-item:hover {
     background-color: #555;
-}
-
-.top-bar {
-    background-color: #333; /* Or any color you prefer */
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.top-bar a {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-.top-bar img {
-    height: 25px; /* Adjust size as needed */
-}
-
-/* Adjust the margin to bring the button right below the bar */
-h1 {
-    margin-top: 10px; /* Adjust the value as needed */
 }
