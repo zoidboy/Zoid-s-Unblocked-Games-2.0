@@ -42,7 +42,7 @@ h1 {
 /* Menu Styles */
 #menu-toggle {
     position: fixed;
-    top: 10px;
+    top: 50px; /* Adjusted the top value from 10px to 20px */
     left: 10px;
     padding: 10px;
     background-color: #333;
@@ -52,6 +52,9 @@ h1 {
     cursor: pointer;
     font-size: 18px;
     z-index: 1000;
+    /* New styles to make the button 50px by 50px */
+    width: 50px;
+    height: 50px;
 }
 
 .side-menu {
@@ -113,3 +116,19 @@ h1 {
 h1 {
     margin-top: 10px; /* Adjust the value as needed */
 }
+/* ... your existing styles ... */
+
+.update-log {
+    text-align: center;
+    margin-top: 20px; 
+    padding: 15px;
+    /*background-color: #222;*/ /* Remove background color */
+    border-radius: 5px;
+    width: 80%; /* Adjust the width as needed */
+}
+
+h3 {
+    font-size: 24px; /* Make the text bigger */
+}
+
+/* ... your existing styles ... */
