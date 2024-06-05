@@ -27,7 +27,7 @@ body::before {
     left: 0;
     width: 200%;
     height: 200%;
-    background: url('path/to/your/space-background.jpg') repeat;
+    background: url('https://steamuserimages-a.akamaihd.net/ugc/271724616138984267/FD78FE7C4AC9EC2941BACBB457D311B908EA9CCD/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false') repeat;
     z-index: -1;
     animation: moveBackground 100s linear infinite;
 }
@@ -35,12 +35,33 @@ body::before {
 /* Header Styles */
 h1 {
     margin-top: 20px;
+    text-transform: uppercase; /* Make the text uppercase */
+    font-size: 40px; /* Adjust font size as needed */
+}
+
+/* Top Bar Styles */
+.top-bar {
+    background-color: #333; /* Or any color you prefer */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.top-bar a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.top-bar img {
+    height: 25px; /* Adjust size as needed */
 }
 
 /* Menu Styles */
 #menu-toggle {
     position: fixed;
-    top: 10px;
+    top: 50px; /* Adjust the top value from 10px to 50px */
     left: 10px;
     padding: 10px;
     background-color: #333;
@@ -50,6 +71,9 @@ h1 {
     cursor: pointer;
     font-size: 18px;
     z-index: 1000;
+    /* New styles to make the button 50px by 50px */
+    width: 50px;
+    height: 50px;
 }
 
 .side-menu {
@@ -87,4 +111,46 @@ h1 {
 
 .menu-item:hover {
     background-color: #555;
+}
+
+/* Game List Styles */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.row a {
+    display: block;
+    margin: 15px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+.row img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.row a:hover img {
+    transform: scale(1.05);
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #fff;
+    display: none;
+}
+
+.row a:hover .play-button {
+    display: block;
 }

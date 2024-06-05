@@ -3,11 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games</title>
+    <title>Games | Zoid's Unblocked Games 2.0</title>
     <link rel="stylesheet" href="games.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnH/PRP7G+O4+sXtvP15Rjk4HboFYhH1YJ7+qfKktabShfOsdCN/rGAd+Pce40+oWNhbZnU8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h1>Games</h1>
+    <div class="top-bar">
+        <a href="https://discord.gg/your-discord-server-link" target="_blank"><img src="discord-icon.png" alt="Discord"></a>
+        <a href="https://github.com/zoidboy/Zoid-s-Unblocked-Games-2.0" target="_blank"><img src="github-icon.png" alt="GitHub"></a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfprRmyYZjkbZ_33oTm9k7KrlMJRK6WEH0r75jCabf2VvDCnQ/viewform" target="_blank"><img src="google-forms-icon.png" alt="Request a Game"></a>
+    </div>
+    <h1>Zoid's Unblocked Games 2.0</h1>
+
+    <button id="menu-toggle">☰</button>
+
+    <div id="side-menu" class="side-menu">
+        <button class="menu-item" onclick="location.href='games.html'">Games</button>
+        <button class="menu-item" onclick="location.href='proxies.html'">Proxies</button>
+        <button class="menu-item" onclick="location.href='sister_sites.html'">Sister Sites</button>
+        <button class="menu-item" onclick="location.href='apps.html'">Apps</button>
+        <button class="menu-item" onclick="location.href='emulators.html'">Emulators</button>
+    </div>
+
     <div class="row">
         <a href="games/whg">
             <img src="images/worlds-hardest-game.jpg" alt="World's Hardest Game">
@@ -40,5 +57,7 @@
             </div>
         </a>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
